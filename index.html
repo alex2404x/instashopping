@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Anuncios</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #f9f506;
+            --background-color: #f7fafc; 
+            --text-color: #1a202c; 
+            --border-color: #e2e8f0;
+        }
+        body {
+            font-family: 'Spline Sans', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        .ad-container {
+            @apply border border-[var(--border-color)] p-4 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300;
+        }
+    </style>
+</head>
+<body class="bg-[var(--background-color)]">
+<div class="container mx-auto p-4 sm:p-6 lg:p-8">
+<div class="mb-8">
+<div class="ad-container flex flex-col items-center">
+<div class="w-full h-64 sm:h-80 lg:h-96 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBDczIiCLt2CFkhv-iWQ3jLVxeuQC1Xw44D0hY9Kpx20eQUb8Q4UlWktvdvWoQR8J9vEG3ul0MjTYXm9hhNtBF_NjWkNnaZeRB4FBHTPZOnE6Ms8o1-JRveXAzjCCDNBdu2h51frqsT30oRce67DsGv4RegvqmcZ6RiR5ImEKQsARFtjP38R-L1a6XaGgIpSdEgVN3fp42io2EkFdBj91OR3xax6GCmzbQi-hivQehvWEp5D_jc0T8G66D2QX60klSiZStYB3myVePV");'>
+</div>
+<h2 class="text-xl font-bold mt-4 text-center text-[var(--text-color)]">Anuncio Principal</h2>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="ad-container flex flex-col items-center">
+<div class="w-full h-48 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAXDflHCHs6uZLhe2rG1mFpdgzVk-aCaQLjvwKpadMTiUBcslNnsGysdzqpVSbrq7CAQQ-FKK5tzmBrV3RcbV_i7XyeNGL1cc7TcgcLxGZ18Ns1cxFFdj2J00Ae1LK-IDRFLyfFovBvBFs6W7y1aOV_QcNghTUBvLBQpRx5weiLdPZI3jGXf861hVewDR81Wk6oYH8SJCDbfFIdKbkg1CpeqDZQjAgJI8sdEZHKKJyRaMhEfOJ764klGYVOMsQiydcHkJKaO7QtiXqn");'>
+</div>
+<h3 class="text-lg font-semibold mt-4 text-center text-[var(--text-color)]">Anuncio 1</h3>
+</div>
+<div class="ad-container flex flex-col items-center">
+<div class="w-full h-48 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDdVnNohNCF2drySEimRu-o4qDXhvIylS7uK8-bd00GC61qpow1NgLGGmXcjzn_JfqNEFvAhPjtmKgQz_8su4ZV8IFZsiXb4tylNcTjPceLEhgwTmJQWmaR-St4ScWOnJoqZ-aXXSJdVyrngZhnUw4aZ8ixEemZkks0L_ahcV4sgxgeV1nyV2KbUCVquPB3TSe_p3RdCHhrSXLNRZZkmnoM8g5Q2E6yWQFVpJzhsRo8F5vNWFJrJZeIncoOq_NaLgdSn3uSB0YS2eU6");'>
+</div>
+<h3 class="text-lg font-semibold mt-4 text-center text-[var(--text-color)]">Anuncio 2</h3>
+</div>
+<div class="ad-container flex flex-col items-center">
+<div class="w-full h-48 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBEDh_Us1mEhEGwOdHf8IT2ZAfxz3fkiwPveHrRbMfFotr2AuXRNfC8tFpMjRhDW4WYuQDOuVLgxMupjNgeDf_CR0SloK8JPLb0MxuKoaE49XAYdomexmIWEuT4lvMcyY8R6Q1lnAMO43M7Jb-bVLrL4fmmARAtCfRyTpMaPSbMYW1uDH7dp9BMtpXol8O5WLhi8d43CJhhI49FYDtTdpZkad34ty0e_pyDP4HXHeTlkZ7Jo_JOuJRQmK1AapW8H1eu0KXd6xqvvR3K");'>
+</div>
+<h3 class="text-lg font-semibold mt-4 text-center text-[var(--text-color)]">Anuncio 3</h3>
+</div>
+</div>
+</div>
+
+</body></html>
