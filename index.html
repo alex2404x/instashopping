@@ -1,55 +1,328 @@
 <!DOCTYPE html>
-<html lang="es"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Anuncios</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
-<style type="text/tailwindcss">
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Urban Threads - Tienda de Moda</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style type="text/tailwindcss">
         :root {
-            --primary-color: #f9f506;
-            --background-color: #f7fafc; 
-            --text-color: #1a202c; 
-            --border-color: #e2e8f0;
+            --primary: #111827;
+            --secondary: #6366f1;
+            --accent: #f43f5e;
+            --background: #f9fafb;
         }
+
         body {
-            font-family: 'Spline Sans', sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
+            font-family: 'Manrope', sans-serif;
+            background: var(--background);
+            color: var(--primary);
         }
-        .ad-container {
-            @apply border border-[var(--border-color)] p-4 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300;
+
+        .glass-card {
+            @apply bg-white/80 backdrop-blur-lg shadow-xl border border-white/60 rounded-3xl;
+        }
+
+        .gradient-bg {
+            background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.3), transparent 45%),
+                radial-gradient(circle at bottom left, rgba(244, 63, 94, 0.25), transparent 50%),
+                #f9fafb;
         }
     </style>
 </head>
-<body class="bg-[var(--background-color)]">
-<div class="container mx-auto p-4 sm:p-6 lg:p-8">
-<div class="mb-8">
-<div class="ad-container flex flex-col items-center">
-<div class="w-full h-64 sm:h-80 lg:h-96 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBDczIiCLt2CFkhv-iWQ3jLVxeuQC1Xw44D0hY9Kpx20eQUb8Q4UlWktvdvWoQR8J9vEG3ul0MjTYXm9hhNtBF_NjWkNnaZeRB4FBHTPZOnE6Ms8o1-JRveXAzjCCDNBdu2h51frqsT30oRce67DsGv4RegvqmcZ6RiR5ImEKQsARFtjP38R-L1a6XaGgIpSdEgVN3fp42io2EkFdBj91OR3xax6GCmzbQi-hivQehvWEp5D_jc0T8G66D2QX60klSiZStYB3myVePV");'>
-</div>
-<h2 class="text-xl font-bold mt-4 text-center text-[var(--text-color)]">Anuncio Principal</h2>
-</div>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-<div class="ad-container flex flex-col items-center">
-<div class="w-full h-48 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAXDflHCHs6uZLhe2rG1mFpdgzVk-aCaQLjvwKpadMTiUBcslNnsGysdzqpVSbrq7CAQQ-FKK5tzmBrV3RcbV_i7XyeNGL1cc7TcgcLxGZ18Ns1cxFFdj2J00Ae1LK-IDRFLyfFovBvBFs6W7y1aOV_QcNghTUBvLBQpRx5weiLdPZI3jGXf861hVewDR81Wk6oYH8SJCDbfFIdKbkg1CpeqDZQjAgJI8sdEZHKKJyRaMhEfOJ764klGYVOMsQiydcHkJKaO7QtiXqn");'>
-</div>
-<h3 class="text-lg font-semibold mt-4 text-center text-[var(--text-color)]">Anuncio 1</h3>
-</div>
-<div class="ad-container flex flex-col items-center">
-<div class="w-full h-48 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDdVnNohNCF2drySEimRu-o4qDXhvIylS7uK8-bd00GC61qpow1NgLGGmXcjzn_JfqNEFvAhPjtmKgQz_8su4ZV8IFZsiXb4tylNcTjPceLEhgwTmJQWmaR-St4ScWOnJoqZ-aXXSJdVyrngZhnUw4aZ8ixEemZkks0L_ahcV4sgxgeV1nyV2KbUCVquPB3TSe_p3RdCHhrSXLNRZZkmnoM8g5Q2E6yWQFVpJzhsRo8F5vNWFJrJZeIncoOq_NaLgdSn3uSB0YS2eU6");'>
-</div>
-<h3 class="text-lg font-semibold mt-4 text-center text-[var(--text-color)]">Anuncio 2</h3>
-</div>
-<div class="ad-container flex flex-col items-center">
-<div class="w-full h-48 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBEDh_Us1mEhEGwOdHf8IT2ZAfxz3fkiwPveHrRbMfFotr2AuXRNfC8tFpMjRhDW4WYuQDOuVLgxMupjNgeDf_CR0SloK8JPLb0MxuKoaE49XAYdomexmIWEuT4lvMcyY8R6Q1lnAMO43M7Jb-bVLrL4fmmARAtCfRyTpMaPSbMYW1uDH7dp9BMtpXol8O5WLhi8d43CJhhI49FYDtTdpZkad34ty0e_pyDP4HXHeTlkZ7Jo_JOuJRQmK1AapW8H1eu0KXd6xqvvR3K");'>
-</div>
-<h3 class="text-lg font-semibold mt-4 text-center text-[var(--text-color)]">Anuncio 3</h3>
-</div>
-</div>
-</div>
+<body class="gradient-bg">
+    <header class="relative overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute -left-32 top-20 h-64 w-64 rounded-full bg-indigo-500/10 blur-3xl"></div>
+            <div class="absolute -right-24 -top-12 h-72 w-72 rounded-full bg-rose-400/10 blur-3xl"></div>
+        </div>
+        <nav class="relative mx-auto flex max-w-6xl items-center justify-between px-6 py-8">
+            <div class="flex items-center gap-3">
+                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-indigo-500 text-white shadow-lg shadow-indigo-500/30">
+                    <span class="text-xl font-extrabold">UT</span>
+                </div>
+                <div>
+                    <p class="text-sm font-semibold tracking-wider text-indigo-500">URBAN THREADS</p>
+                    <h1 class="text-2xl font-extrabold text-slate-900">Streetwear Boutique</h1>
+                </div>
+            </div>
+            <div class="hidden items-center gap-4 md:flex">
+                <a class="text-sm font-medium text-slate-600 transition hover:text-indigo-500" href="#coleccion">Colección</a>
+                <a class="text-sm font-medium text-slate-600 transition hover:text-indigo-500" href="#testimonios">Testimonios</a>
+                <a class="text-sm font-medium text-slate-600 transition hover:text-indigo-500" href="#pago">Pago</a>
+                <button class="rounded-full bg-slate-900 px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-slate-900/30 transition hover:-translate-y-0.5 hover:bg-indigo-600">Colección SS24</button>
+            </div>
+        </nav>
 
-</body></html>
+        <div class="relative mx-auto grid max-w-6xl items-center gap-12 px-6 pb-20 pt-10 lg:grid-cols-2">
+            <div class="space-y-6">
+                <span class="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-indigo-600">Nueva colección cápsula</span>
+                <h2 class="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">Tu estilo urbano, ahora a un clic</h2>
+                <p class="text-lg text-slate-600">Descubre piezas icónicas diseñadas para destacar en la ciudad. Compra en segundos, sin registros ni complicaciones: solo dinos tu nombre y elige cómo quieres pagar.</p>
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="#coleccion" class="rounded-full bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-indigo-600/40 transition hover:-translate-y-0.5 hover:bg-indigo-700">Ver productos</a>
+                    <a href="#pago" class="rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:-translate-y-0.5 hover:border-indigo-400 hover:text-indigo-500">Pagar en segundos</a>
+                </div>
+                <div class="flex items-center gap-6 text-sm text-slate-500">
+                    <div class="flex items-center gap-2">
+                        <svg class="h-5 w-5 text-indigo-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 12.75 11.25 15 15 9.75" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0Z" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Pago seguro</div>
+                    <div class="flex items-center gap-2">
+                        <svg class="h-5 w-5 text-indigo-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 6v6l4 2" stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="12" cy="12" r="9" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Entrega en 48h</div>
+                    <div class="flex items-center gap-2">
+                        <svg class="h-5 w-5 text-indigo-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 12.75 11.25 15 15 9.75" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0Z" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Garantía 30 días</div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -top-8 -left-12 h-28 w-28 rounded-full bg-indigo-500/20 blur-2xl"></div>
+                <div class="absolute -bottom-10 -right-8 h-32 w-32 rounded-full bg-rose-400/20 blur-2xl"></div>
+                <div class="glass-card relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80" alt="Colección urbana" class="h-full w-full object-cover" />
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
+                        <p class="text-xs uppercase tracking-[0.35em] text-white/70">Destacado</p>
+                        <h3 class="mt-2 text-2xl font-bold">Hoodie Neo Noir</h3>
+                        <p class="mt-1 text-sm text-white/80">Edición limitada · 100 unidades</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative mx-auto flex max-w-6xl flex-col gap-20 px-6 pb-24">
+        <section id="coleccion" class="space-y-12">
+            <div class="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
+                <div>
+                    <p class="text-sm font-semibold uppercase tracking-[0.35em] text-indigo-500">Colección cápsula</p>
+                    <h2 class="mt-3 text-3xl font-extrabold text-slate-900 sm:text-4xl">Piezas esenciales para tu vibe urbana</h2>
+                </div>
+                <a href="#pago" class="rounded-full border border-slate-300 px-5 py-2 text-sm font-semibold text-slate-700 transition hover:-translate-y-0.5 hover:border-indigo-400 hover:text-indigo-500">Completar pedido</a>
+            </div>
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <article class="glass-card flex flex-col overflow-hidden">
+                    <div class="relative h-56">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80" alt="Chaqueta bomber" class="h-full w-full object-cover" />
+                        <span class="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-slate-900">Nuevo</span>
+                    </div>
+                    <div class="flex flex-1 flex-col gap-4 p-6">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Bomber Aurora</h3>
+                            <p class="mt-1 text-sm text-slate-500">Tejido técnico impermeable · Forro térmico</p>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-extrabold text-indigo-600">€120</span>
+                            <span class="text-xs font-semibold uppercase tracking-widest text-rose-500">Stock limitado</span>
+                        </div>
+                        <button class="mt-auto rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-indigo-600">Añadir al pedido</button>
+                    </div>
+                </article>
+
+                <article class="glass-card flex flex-col overflow-hidden">
+                    <div class="relative h-56">
+                        <img src="https://images.unsplash.com/photo-1503342394128-c104d54dba01?auto=format&fit=crop&w=800&q=80" alt="Sudadera" class="h-full w-full object-cover" />
+                        <span class="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-slate-900">Best seller</span>
+                    </div>
+                    <div class="flex flex-1 flex-col gap-4 p-6">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Hoodie Pixel Dust</h3>
+                            <p class="mt-1 text-sm text-slate-500">Algodón orgánico · Interior afelpado</p>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-extrabold text-indigo-600">€85</span>
+                            <span class="text-xs font-semibold uppercase tracking-widest text-emerald-500">Restock</span>
+                        </div>
+                        <button class="mt-auto rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-indigo-600">Añadir al pedido</button>
+                    </div>
+                </article>
+
+                <article class="glass-card flex flex-col overflow-hidden">
+                    <div class="relative h-56">
+                        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80" alt="Sneakers" class="h-full w-full object-cover" />
+                        <span class="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-slate-900">Exclusivo</span>
+                    </div>
+                    <div class="flex flex-1 flex-col gap-4 p-6">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Sneakers Prism</h3>
+                            <p class="mt-1 text-sm text-slate-500">Edición limitada · Suela reactiva</p>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-extrabold text-indigo-600">€140</span>
+                            <span class="text-xs font-semibold uppercase tracking-widest text-indigo-500">Glow night</span>
+                        </div>
+                        <button class="mt-auto rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-indigo-600">Añadir al pedido</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="grid gap-10 lg:grid-cols-[1.2fr_1fr]" id="testimonios">
+            <div class="glass-card space-y-8 p-10">
+                <div class="flex items-center gap-3 text-indigo-500">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 6V4.5m0 1.5a6 6 0 016 6v.75c0 .621.504 1.125 1.125 1.125h.375m-7.5-7.5a6 6 0 00-6 6v.75c0 .621-.504 1.125-1.125 1.125H4.5m15.75 0A3.375 3.375 0 0116.875 18h-9.75A3.375 3.375 0 013.75 14.625v-1.5A3.375 3.375 0 017.125 9.75h9.75A3.375 3.375 0 0120.25 13.125v1.5z" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em]">Testimonios reales</p>
+                </div>
+                <h2 class="text-3xl font-extrabold text-slate-900">Comunidad que vibra con Urban Threads</h2>
+                <div class="grid gap-6 md:grid-cols-2">
+                    <article class="rounded-2xl border border-indigo-100 bg-white/70 p-6 shadow-lg shadow-indigo-100/50">
+                        <p class="text-sm text-slate-600">“El proceso de compra es rapidísimo. Elegí mi hoodie favorita y en 48 horas la tenía en casa. Pagé con crypto sin complicaciones.”</p>
+                        <div class="mt-4 flex items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Cliente" class="h-10 w-10 rounded-full object-cover" />
+                            <div>
+                                <p class="text-sm font-semibold text-slate-900">Andrea Paredes</p>
+                                <p class="text-xs text-slate-500">Barcelona</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rounded-2xl border border-rose-100 bg-white/70 p-6 shadow-lg shadow-rose-100/50">
+                        <p class="text-sm text-slate-600">“Me encanta que solo tenga que escribir mi nombre. Pagé por Bizum y todo llegó impecable. ¡La bomber Aurora es lo más!”</p>
+                        <div class="mt-4 flex items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=120&q=80" alt="Cliente" class="h-10 w-10 rounded-full object-cover" />
+                            <div>
+                                <p class="text-sm font-semibold text-slate-900">Julia Sanz</p>
+                                <p class="text-xs text-slate-500">Madrid</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="glass-card flex flex-col justify-between p-10">
+                <div class="space-y-6">
+                    <p class="text-xs font-semibold uppercase tracking-[0.35em] text-rose-500">Compromiso</p>
+                    <h3 class="text-2xl font-bold text-slate-900">Moda responsable</h3>
+                    <p class="text-sm text-slate-600">Trabajamos con talleres locales, utilizamos fibras recicladas y compensamos la huella de carbono de cada envío.</p>
+                </div>
+                <div class="mt-10 grid gap-4 text-sm text-slate-600">
+                    <div class="flex items-center gap-3">
+                        <span class="flex h-10 w-10 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600">01</span>
+                        <p>Producción ética certificada</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="flex h-10 w-10 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600">02</span>
+                        <p>Packaging compostable</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="flex h-10 w-10 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600">03</span>
+                        <p>Donamos el 1% a proyectos urbanos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pago" class="grid gap-10 lg:grid-cols-2">
+            <div class="glass-card p-10">
+                <p class="text-xs font-semibold uppercase tracking-[0.35em] text-indigo-500">Pago en segundos</p>
+                <h2 class="mt-4 text-3xl font-extrabold text-slate-900">Solo necesitamos tu nombre</h2>
+                <p class="mt-3 text-sm text-slate-600">Completa tu pedido con el mínimo dato: escribe tu nombre y elige tu método de pago favorito. Recibirás confirmación instantánea y coordinamos el envío contigo.</p>
+                <form class="mt-8 space-y-6">
+                    <div>
+                        <label for="customer-name" class="text-sm font-semibold text-slate-700">Nombre completo</label>
+                        <input id="customer-name" type="text" required placeholder="Tu nombre" class="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm transition focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200" />
+                    </div>
+                    <div class="grid gap-4 text-sm font-semibold text-slate-600">
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Elige cómo pagar</p>
+                        <button type="button" class="flex items-center justify-between rounded-2xl border border-slate-200 bg-white px-4 py-3 text-left shadow-sm transition hover:-translate-y-0.5 hover:border-indigo-400">
+                            <span class="flex items-center gap-3">
+                                <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900 text-white">₿</span>
+                                <span>Criptomonedas</span>
+                            </span>
+                            <span class="text-xs uppercase tracking-[0.3em] text-indigo-500">Wallet segura</span>
+                        </button>
+                        <button type="button" class="flex items-center justify-between rounded-2xl border border-slate-200 bg-white px-4 py-3 text-left shadow-sm transition hover:-translate-y-0.5 hover:border-indigo-400">
+                            <span class="flex items-center gap-3">
+                                <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-500 text-white">
+                                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.5 4.5A2.5 2.5 0 0 0 3 7v10a2.5 2.5 0 0 0 2.5 2.5h13A2.5 2.5 0 0 0 21 17V7a2.5 2.5 0 0 0-2.5-2.5h-13Zm2.02 5.004a.75.75 0 0 1 .75-.75h3.5a2.25 2.25 0 0 1 .622 4.415l1.683 2.517a.75.75 0 0 1-1.248.832l-1.924-2.874h-.883v2.125a.75.75 0 0 1-1.5 0v-5.164Zm1.5.75v1.875h1.75a.75.75 0 0 0 0-1.5H9.02Z" />
+                                    </svg>
+                                </span>
+                                <span>PayPal</span>
+                            </span>
+                            <span class="text-xs uppercase tracking-[0.3em] text-indigo-500">Checkout express</span>
+                        </button>
+                        <button type="button" class="flex items-center justify-between rounded-2xl border border-slate-200 bg-white px-4 py-3 text-left shadow-sm transition hover:-translate-y-0.5 hover:border-indigo-400">
+                            <span class="flex items-center gap-3">
+                                <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-rose-500 text-white">Bz</span>
+                                <span>Bizum</span>
+                            </span>
+                            <span class="text-xs uppercase tracking-[0.3em] text-indigo-500">Confirmación instantánea</span>
+                        </button>
+                    </div>
+                    <button type="submit" class="w-full rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-900/30 transition hover:-translate-y-0.5 hover:bg-indigo-600">Confirmar pedido</button>
+                    <p class="text-xs text-slate-500">Nos pondremos en contacto contigo tras confirmar el pago para coordinar el envío.</p>
+                </form>
+            </div>
+            <div class="glass-card flex flex-col justify-between p-10">
+                <div class="space-y-6">
+                    <p class="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">Beneficios exclusivos</p>
+                    <h3 class="text-2xl font-bold text-slate-900">Haz match con tu estilo</h3>
+                    <ul class="space-y-4 text-sm text-slate-600">
+                        <li class="flex items-start gap-3">
+                            <svg class="mt-1 h-5 w-5 text-indigo-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 12.75l6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>Colecciones curadas por estilistas urbanos cada mes.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="mt-1 h-5 w-5 text-indigo-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 12.75l6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>Pagos flexibles y sin fricciones con tus métodos favoritos.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="mt-1 h-5 w-5 text-indigo-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 12.75l6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>Atención personalizada vía WhatsApp o Telegram para cada pedido.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-10 rounded-2xl border border-dashed border-slate-300 bg-white/60 p-6 text-sm text-slate-500">
+                    <p class="font-semibold text-slate-900">¿Necesitas asesoría?</p>
+                    <p class="mt-2">Escríbenos con tus dudas sobre tallas o estilos y nuestro equipo te responderá en menos de 15 minutos.</p>
+                    <a href="mailto:hola@urbanthreads.shop" class="mt-4 inline-flex items-center gap-2 rounded-full bg-indigo-600 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white transition hover:-translate-y-0.5 hover:bg-indigo-700">Contactar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-white/60 bg-white/70">
+        <div class="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-10 md:flex-row md:items-center md:justify-between">
+            <div class="flex items-center gap-4">
+                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-indigo-500 text-white shadow-lg shadow-indigo-500/30">
+                    <span class="text-xl font-extrabold">UT</span>
+                </div>
+                <div>
+                    <p class="text-sm font-semibold tracking-wider text-indigo-500">URBAN THREADS</p>
+                    <p class="text-sm text-slate-500">Moda urbana que habla por ti.</p>
+                </div>
+            </div>
+            <div class="text-sm text-slate-500">
+                <p>© <span id="year"></span> Urban Threads. Todos los derechos reservados.</p>
+            </div>
+            <div class="flex items-center gap-4 text-sm text-slate-500">
+                <a href="#" class="transition hover:text-indigo-500">Política de privacidad</a>
+                <a href="#" class="transition hover:text-indigo-500">Términos</a>
+                <a href="#" class="transition hover:text-indigo-500">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
